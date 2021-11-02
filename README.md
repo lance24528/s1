@@ -38,7 +38,7 @@ int main() {
 	case 'y':
 	case 'Y':
 		cout << "Enter Fullname: ";
-		cin >> buffer;
+		cin >> buffer; // I included this because when you Input Y or N a \n is created after pressing enter and getline gets skipped see screenshot below.
 		getline(cin, fullname);
 		cout << "\nEnter Age: ";
 		cin >> age;
